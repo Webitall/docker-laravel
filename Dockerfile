@@ -36,7 +36,7 @@ EXPOSE 80
 
 # Add volumes
 VOLUME /share
-COPY /app /share
+ADD app /share
 
 
 # ------------------------------------------------------------------------------
