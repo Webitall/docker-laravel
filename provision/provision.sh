@@ -162,6 +162,12 @@ cp /provision/conf/xdebug.ini /etc/php5/mods-available/xdebug.ini
 cp /provision/bin/selenium-setup.sh /home/selenium-setup.sh
 
 # ------------------------------------------------------------------------------
+# Copy contents of APP folder to nginx
+# ------------------------------------------------------------------------------
+
+cp -R /provision/app/* /usr/share/nginx/html
+
+# ------------------------------------------------------------------------------
 # Clean up
 # ------------------------------------------------------------------------------
 rm -rf /provision
