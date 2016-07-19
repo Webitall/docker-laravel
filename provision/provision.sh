@@ -165,6 +165,9 @@ cp /provision/bin/selenium-setup.sh /home/selenium-setup.sh
 # Copy contents of APP folder to nginx
 # ------------------------------------------------------------------------------
 
+mkdir /share/public
+mkdir /usr/share/nginx/html
+
 cp -R /provision/app/* /usr/share/nginx/html
 cp -R /provision/app/* /share/public
 
