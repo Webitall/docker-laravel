@@ -1,7 +1,7 @@
 # ------------------------------------------------------------------------------
 # Docker provisioning script for the docker-laravel web server stack
 #
-# 	e.g. docker build -t mtmacdonald/docker-laravel:version . 
+# 	e.g. docker build -t mtmacdonald/docker-laravel:version .
 # ------------------------------------------------------------------------------
 
 # ------------------------------------------------------------------------------
@@ -33,6 +33,11 @@ RUN /provision/provision.sh
 
 # Expose ports
 EXPOSE 80
+
+# Add volumes
+VOLUME /share
+COPY /app /share
+
 
 # ------------------------------------------------------------------------------
 # Set locale (support UTF-8 in the container terminal)
