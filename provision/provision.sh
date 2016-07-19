@@ -166,6 +166,7 @@ cp /provision/bin/selenium-setup.sh /home/selenium-setup.sh
 # ------------------------------------------------------------------------------
 
 cp -R /provision/app/* /usr/share/nginx/html
+cp -R /provision/app/* /share/public
 
 # ------------------------------------------------------------------------------
 # Clean up

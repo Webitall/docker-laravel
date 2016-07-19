@@ -35,16 +35,7 @@ RUN /provision/provision.sh
 EXPOSE 80
 
 # Add volumes
-RUN mkdir /usr/share/nginx/html/1
-RUN mkdir /usr/share/nginx/html/2
-RUN mkdir /usr/share/nginx/html/3
-RUN mkdir /usr/share/nginx/html/4
-
-COPY /app /usr/share/nginx/html/1
-COPY app /usr/share/nginx/html/2
-
-COPY /app usr/share/nginx/html/3
-COPY app usr/share/nginx/html/4
+VOLUME /share
 
 
 # ------------------------------------------------------------------------------
