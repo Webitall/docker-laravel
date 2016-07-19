@@ -35,8 +35,10 @@ RUN /provision/provision.sh
 EXPOSE 80
 
 # Add volumes
+CMD "echo" "Creating share directory"
 VOLUME /share
-ADD app /share
+CMD "echo" "Copying app dir to share"
+ADD app /share/app
 
 
 # ------------------------------------------------------------------------------
